@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-list</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+    <body onload="init()">
+        <div class="container">
+            <h1>To-Do LIST</h1>
+            <select name="todolist" id="list" onchange="onSelectChange()">
+                
+            </select>
+                <input type="text" id="myInput" placeholder="List Name...">
+                    <button type="submit" onclick="addList()" id= "submitBtn">New List</button>
+        <div class="wrapper">
+            <div class="add-todo">
+                <div class="input-wrapper" id="newtask">
+                    <input type="text" id="input-task" placeholder="To Do Items...">
+                </div>
+                    <div class="button-wrapper" id="newtask"><button id= "addBtn">ADD</button>
+                </div>  
+            </div>
+                <div class="todo-wrapper"></div>
+            </div>
+        </div>  
+        <script src="js/script.js"></script>
+      
+    </body>
+</html>
