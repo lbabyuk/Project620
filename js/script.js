@@ -23,8 +23,7 @@ function save() {
    localStorage.collection = JSON.stringify(Array.from(collection.entries()));
    localStorage.currentList = currentList;
    updateLists();
-   //console.log(collection);
-}
+ }
 
 function addList() {
    const newList = document.getElementById("myInput").value;
@@ -50,8 +49,7 @@ function addOption(value) {
 
 function onSelectChange(){
    currentList =  todoList.value;
-   //console.log(currentList);
-   fillList();
+  fillList();
    save();
 }
 

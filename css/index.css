@@ -1,15 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+@media only screen and (min-width: 1025px) and (max-width: 1100px){
+  .container{
+    width: 40%;
+  }
+  #addBtn {
+    width: 15%;
+    height: 38px;
+  }
+  #submitBtn{
+    width: 15%;
+    height: 55px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .container{
+    width: 42%;
+  }
+  h1{
+    font-size: 30px;
+  }
+  #addBtn {
+    width: 10%;
+    height: 30px;
+  }
+  #submitBtn{
+    width: 15%;
+    height: 55px;
+  }
+}
+
+@media only screen and (min-width: 568px) and (max-width: 767px){
+  .container{
+    width: 55%;
+  }
+  h1{
+    font-size: 30px;
+  }
+  #addBtn {
+    width: 15%;
+    height: 30px;
+  }
+  #submitBtn{
+    width: 20%;
+    height: 45px;
+  }
+}
+
+@media only screen and (min-width: 368px) and (max-width: 567px){
+  .container{
+    width: 80%;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  #addBtn {
+    width: 20%;
+    height: 35px;
+  }
+  #submitBtn{
+    width: 25%;
+    height: 45px;
+  }
+}
 
   *,
   *:before,
   *:after{
-    margin: 0;
-    box-sizing: border-box;
+      box-sizing: border-box;
 }
+
 body {
+  margin: 0;
+  padding: 0;
+  font-family:'Poppins', sans-serif;
   background:linear-gradient(
- gray, lightgray);
+ rgb(145, 141, 141), rgb(190, 184, 184));
   background-repeat: no-repeat;
-  background-position: center-center;
   background-size: cover;
   height: 100vh;
 }
@@ -17,7 +85,7 @@ body {
 .container{
   background-color: rgb(192, 189, 192);
   border: 2px solid white;
-  width: 70%;
+  width: 90%;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -27,8 +95,9 @@ body {
 
 h1{
   text-align: center;
-  font-size: 3vw;
+  font-size: 3.5vw;
   padding-bottom: 20px;
+  letter-spacing: -0.5px;
 }
   #list{
   width: 30%;
@@ -40,7 +109,8 @@ h1{
   border: 2px solid #d1d3d4;
   color:#111111;
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 2.2vw;
+  letter-spacing: -0.5px;
   position: relative;
  }
 
@@ -49,21 +119,21 @@ h1{
   height:45% ;
   font-family: 'Poppins', sans-serif;
   font-size: 2vw;
+  letter-spacing: -0.5px;
   border-radius: 10px;
   border: 2px solid #d1d3d4;
   padding: 12px;
   color:#111111;
-  font-weight: 500;
+  font-weight: 600;
   position: relative;
 }
 
 #submitBtn{
   position: relative;
-  width: 20%;
-  height: 55px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 2vw;
+  letter-spacing: -0.5px;
   background-color: #33a54f;
   border-radius: 10px;
   border: 2px solid #d1d3d4;
@@ -76,12 +146,13 @@ h1{
   height:45% ;
   font-family: 'Poppins', sans-serif;
   font-size: 2vw;
+  letter-spacing: -0.5px;
   border-radius: 10px;
   border: 2px solid #d1d3d4;
-  padding: 12px;
+  padding: 8px;
   margin-bottom: 10px;
   color:#111111;
-  font-weight: 500;
+  font-weight: 600;
   position: relative;
 }
 
@@ -92,13 +163,12 @@ h1{
 
 #addBtn {
   float: right;
-  width: 10%;
-  height: 45px;
   margin-bottom: 10px;
   border-radius: 5px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1.8vw;
+  letter-spacing: -0.5px;
   background-color: #33a54f;
   border:2px solid #d1d3d4;
   color: #ffffff;
@@ -110,16 +180,22 @@ h1{
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 8px;
-  border-radius: 10px;
+  padding: 1px;
+  margin-bottom: 8px;
+  border-radius: 8px;
   background-color: #ffffff;
   border: 2px solid #d1d3d4;
 }
 
 .description{
-  font-family: 'Poppins', sans-serif;
   font-size: 1.8vw;
+  font-weight: 600;
   padding: 10px 10px;
+}
+
+.todo-item[checked]{
+  text-decoration: line-through;
+  color: rgb(66, 219, 5);
 }
 
 .buttons{
@@ -132,6 +208,7 @@ h1{
   border-radius: 5px;
   font-family: 'Poppins', sans-serif;
   font-size: 1.2vw;
+  letter-spacing: -0.5px;
   background-color: #33a54f;
   border: 5px;
   color: #ffffff;
